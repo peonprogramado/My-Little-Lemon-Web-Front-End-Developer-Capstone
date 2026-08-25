@@ -34,15 +34,15 @@ const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="container grid">
-        <img 
-          className="site-footer-logo" 
-          src={logoWhiteImage} 
-          alt="Little Lemon" 
+        <img
+          className="site-footer-logo"
+          src={logoWhiteImage}
+          alt="Little Lemon"
         />
-        <nav className="site-footer-nav">
+        <nav className="site-footer-nav" aria-label="Footer navigation">
           <h4>Sitemap</h4>
           <ul>
-            {navLinks.map((navLink, index) => 
+            {navLinks.map((navLink, index) =>
               <li key={index}>
                 <Link to={navLink.path}>{navLink.name}</Link>
               </li>
@@ -52,7 +52,7 @@ const Footer = () => {
         <div className="site-footer-contact">
           <h4>Contact us</h4>
           <address>
-          {contacts.map((contact, index) => 
+          {contacts.map((contact, index) =>
             <p key={index}>
               <FontAwesomeIcon icon={contact.icon} /> {contact.info}
             </p>
@@ -61,14 +61,15 @@ const Footer = () => {
         </div>
         <div className="site-footer-social">
           <h4>Connect with us</h4>
-          {socials.map((social, index) => 
-            <a 
-              key={index} 
-              href={`https://www.${social.name}.com`} 
-              target="_blank" 
-              rel="noreferrer" 
+          {socials.map((social, index) =>
+            <a
+              key={index}
+              aria-label={`Visit Little Lemon on ${social.name}`}
+              href={`https://www.${social.name}.com`}
+              target="_blank"
+              rel="noreferrer"
             >
-              <FontAwesomeIcon icon={social.icon} size="lg" />
+              <FontAwesomeIcon icon={social.icon} size="lg" aria-hidden="true" />
             </a>
           )}
         </div>

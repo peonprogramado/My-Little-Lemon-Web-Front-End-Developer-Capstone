@@ -1,7 +1,7 @@
 .bookings h2 {
   padding: 1.875rem 0 1.875rem 0;
-  background-color: #495E57;
-  color: #FFFFFF;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
   text-align: center;
 }
 
@@ -18,14 +18,14 @@
 
 .form-field p {
   font-size: 0.9375rem;
-  color: red;
+  color: var(--color-error);
 }
 
 .bookings button:disabled,
 .bookings button[disabled] {
-  background-color: #EDEFEE;
-  border-color: #EDEFEE;
-  color: #ADAFAE;
+  background-color: var(--color-surface-muted);
+  border-color: var(--color-surface-muted);
+  color: var(--color-text-disabled);
   cursor: not-allowed;
 }
 

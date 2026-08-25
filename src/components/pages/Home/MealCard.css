@@ -7,7 +7,7 @@
   flex-direction: column;
   border-radius: 1rem;
   overflow: hidden;
-  background-color: #EDEFEE;
+  background-color: var(--color-surface-muted);
 }
 
 .meal-card:hover .meal-card-image img {
@@ -41,7 +41,7 @@
 
 .meal-card-header span {
   font-weight: bold;
-  color: #EE9972;
+  color: var(--color-accent);
 }
 
 .meal-card-body-footer {

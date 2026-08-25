@@ -1,6 +1,6 @@
 .site-footer {
-  background-color: #495E57;
-  color: #FFFFFF;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
 }
 
 .site-footer .container {
@@ -22,13 +22,13 @@
 }
 
 .site-footer a {
-  color: #FFFFFF;
+  color: var(--color-surface);
   transition: color 0.5s;
 }
 
 .site-footer a:hover, 
 .site-footer a:focus {
-  color: #F4CE14;
+  color: var(--color-secondary);
 }
 
 .site-footer-nav {

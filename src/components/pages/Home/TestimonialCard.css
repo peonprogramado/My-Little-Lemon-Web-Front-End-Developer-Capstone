@@ -1,34 +1,72 @@
 .testimonial-card {
-  grid-column: auto;
-  grid-row: 2;
-  min-height: 22.75rem;
+  min-height: 25rem;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  padding: 1rem;
-  background-color: #FFFFFF;
-  border-radius: 1rem;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  background-color: var(--color-surface);
+  scroll-snap-align: start;
 }
 
-.testimonial-card img {
-  width: 8rem;
-  margin: 0 auto 0.5rem auto;
+.testimonial-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.testimonial-card-customer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.testimonial-card-customer img {
+  width: 4.5rem;
+  height: 4.5rem;
+  flex-shrink: 0;
   border-radius: 50%;
+  object-fit: cover;
 }
 
-.testimonial-card h4 {
-  margin: 0 auto 1rem auto;
+.testimonial-card h3 {
+  color: var(--color-primary);
+  font-family: "Markazi Text";
+  font-size: 1.75rem;
+  font-weight: normal;
+  line-height: 1;
 }
 
-.testimonial-card span {
-  color: #F4CE14;
+.testimonial-card-customer span {
+  display: flex;
+  gap: 0.125rem;
+  margin-top: 0.35rem;
+  color: var(--color-secondary);
 }
 
-/*-- Media queries ------------------------------------------------------*/
-
-@media (max-width: 949px) {
-.testimonial-card {
-  grid-column: auto;
-  grid-row: auto;
+.testimonial-quote-mark {
+  color: var(--color-surface-muted);
+  font-family: "Markazi Text";
+  font-size: 4.5rem;
+  line-height: 0.7;
 }
+
+.testimonial-card blockquote {
+  margin-top: 4rem;
+  color: var(--color-primary);
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 576px) {
+  .testimonial-card {
+    min-height: 22rem;
+    padding: 1.5rem;
+  }
+
+  .testimonial-card-customer img {
+    width: 4rem;
+    height: 4rem;
+  }
 }

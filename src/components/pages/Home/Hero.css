@@ -1,6 +1,6 @@
 .hero {
   padding-top: 1.875rem;
-  background-color: #495E57;
+  background-color: var(--color-primary);
 }
 
 .hero .container {
@@ -14,16 +14,16 @@
 }
 
 .hero-information h1 {
-  color: #F4CE14;
+  color: var(--color-secondary);
 }
 
 .hero-information h2 {
-  color: #FFFFFF;
+  color: var(--color-surface);
 }
 
 .hero-information p {
   margin-top: 1.5rem;
-  color: #FFFFFF;
+  color: var(--color-surface);
 }
 
 .hero-information .button-primary {
@@ -33,7 +33,7 @@
 
 .hero-information .button-primary:hover, 
 .hero-information .button-primary:focus {
-  border-color: #F4CE14;
+  border-color: var(--color-secondary);
 }
 
 .hero-image {
